@@ -1,3 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.main-layout {
+    min-height: 100vh;
+}
+
+.main-layout,
+.main-footer,
+.main-header-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-layout {
+    flex-direction: column;
+}
+
+.main-nav > ul {
+    display: flex;
+    gap: 16px;
+}
+
+.main-header-inner {
+    align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    height: 60px;
+}
