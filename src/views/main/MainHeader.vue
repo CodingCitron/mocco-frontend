@@ -5,7 +5,11 @@
     <header class="main-header">
         <div class="main-header-inner">
             <div>
-                <h1>MOGAGCO</h1>
+                <h1>
+                    <RouterLink to="/">
+                        MOGAGCO
+                    </RouterLink>
+                </h1>
             </div>
             <nav class="main-nav">
                 <ul>
@@ -15,7 +19,7 @@
                         </RouterLink>
                     </li>
                     <li>
-                        <RouterLink to="#">
+                        <RouterLink :to="{ name: 'login' }">
                             로그인
                         </RouterLink>
                     </li>
